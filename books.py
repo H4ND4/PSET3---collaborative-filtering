@@ -39,10 +39,10 @@ st.markdown("""
 # Load trained model and datasets
 st.title("Book Recommendation System", anchor=False)
 
-model = pickle.load(open("data/model.pkl", 'rb'))
-book_names = pickle.load(open("data/book_names.pkl", 'rb'))
-Rating = pickle.load(open("data/Rating.pkl", 'rb'))
-book_pivot = pickle.load(open("data/book_pivot.pkl", 'rb'))
+model = pickle.load(open("model.pkl", 'rb'))
+book_names = pickle.load(open("book_names.pkl", 'rb'))
+Rating = pickle.load(open("Rating.pkl", 'rb'))
+book_pivot = pickle.load(open("book_pivot.pkl", 'rb'))
 
 # Function to fetch book cover images
 def fetch_poster(suggestion):
