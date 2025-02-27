@@ -86,4 +86,4 @@ if st.button('Show Recommendations') or target_book:
         for i in range(1, 6):  # Display top 5 recommended books
             with cols[i-1]:
                 st.text(recommended_books[i])
-                st.image(poster_url[i], use_column_width=True)
+                st.image(poster_url[i], use_container_width=True)
